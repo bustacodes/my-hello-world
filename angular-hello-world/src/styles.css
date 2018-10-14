@@ -1,0 +1,24 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://unpkg.com/bootstrap@3.3.7/dist/css/bootstrap.min.css');
+
+body{ 
+    opacity:0;
+    transition: opacity 5s;
+    -webkit-transition: opacity 5s; /* Safari */
+}
+
+@keyframes logo {
+    0%   {left:0%; top:0%;}
+    25%  {left:0%; top:0%;}
+    50%  {left:50%; top:0%;}
+    75%  {right:25%; top:0%;}
+    100% {left:0%; top:0%;}
+}
+
+/* The element to apply the animation to */
+#logo {
+    position: relative;
+    background-color: red;
+    animation-name: logo;
+    animation-duration: 4s;
+}
